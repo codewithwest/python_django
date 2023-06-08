@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'vortex_tinker',
+    'vortex_tinker',
     'vortex_tinker.apps.VortexTinkerConfig',
 ]
 
