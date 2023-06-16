@@ -1,8 +1,9 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse
+from django import forms
+from .forms import DemoForm
 # Create your views here.
-
 
 def home(request):
     return HttpResponse(
@@ -14,7 +15,9 @@ def profile(request):
     return HttpResponse(
         "<center><h1><b>Welcome To Vortex_Tinker Profile</b><h1></center>"
     )
-
+def forms(request):
+    # name = forms.CharField()
+    return HttpRequest(DemoForm)
 
 def method(request):
     path = request.path

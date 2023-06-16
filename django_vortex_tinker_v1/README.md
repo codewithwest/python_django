@@ -68,4 +68,10 @@ from django.db import models
 >
 > #### <QuerySet [<Menu: kota : sa>, <Menu: sphahlo : new value>]>
 
-&#128516
+## Show migration
+
+> ### python manage.py showmigrations
+
+## Create superuser
+
+> ### python manage.py createsuperuser
