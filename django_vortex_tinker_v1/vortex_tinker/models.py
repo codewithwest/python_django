@@ -15,7 +15,7 @@ class Menu(models.Model):
     name = models.CharField(max_length=100)
     cuisine = models.CharField(max_length=100)
     price = models.IntegerField()
-    category_id = models.ForeignKey(MenuCategory, on_delete=models.PROTECT, default=None)
+    # category_id = models.ForeignKey(MenuCategory, on_delete=models.PROTECT, default=None)
 
 
     def __str__(self) -> str:
@@ -39,6 +39,7 @@ class Booking(models.Model):
 
 # Create your models here.
 class Employee(models.Model):
+
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     role = models.CharField(max_length=100)
@@ -46,3 +47,6 @@ class Employee(models.Model):
 
     def __str__(self):
         return self.first_name
+    
+
+    
