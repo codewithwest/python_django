@@ -1,16 +1,23 @@
 from django.http import HttpRequest, HttpResponse
+from django.template import loader 
 from django.shortcuts import render
 from django.http import HttpResponse
 from django import forms
 from .forms import DemoForm
+from .models import Menu
 # Create your views here.
 
 def home(request):
-    return HttpResponse(
-        "<center><h1><b>Welcome To Vortex_Tinker</b><h1></center>"
-    )
+    return render(request, 'index.html') 
+def about(request):
+    return render(request, 'about.html') 
+def menu(request):
+    return render(request, 'menu.html') 
 
-
+def nav(request):
+    context={} 
+    return  render( request,'navigation.html',context)
+     
 def profile(request):
     return HttpResponse(
         "<center><h1><b>Welcome To Vortex_Tinker Profile</b><h1></center>"
@@ -49,3 +56,9 @@ def drinks(request, drink_name):
     }
     choice_of_drink = drink[drink_name]
     return HttpResponse(f"<h2> {drink_name} </h2>" + choice_of_drink)
+
+
+def menu_by_id(request):
+    newmenu = Menu.objects.all()
+    newmenu_dict = {'menu':newmenu}
+    return render(request,'menu_cards.html', newmenu_dict)
