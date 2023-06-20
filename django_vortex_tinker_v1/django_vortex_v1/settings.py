@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_vortex_v1.wsgi.application'
+WSGI_APPLICATION = 'django_vortex_v1.wsgi.app'
 # vercel_app/settings.py
 # WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
