@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import index
+from python_knight_app.views import index
 
 
 urlpatterns = [
