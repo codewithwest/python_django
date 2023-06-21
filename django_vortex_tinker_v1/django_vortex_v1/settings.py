@@ -24,23 +24,23 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9)g2y&0kl^3pe_u)8*5#)hk@y7ah#(rwf(=$u1bac)b6x^op!v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-     'vortex_tinker.apps.VortexTinkerConfig',
+    # 'vortex_tinker.apps.VortexTinkerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'vortex_tinker',
-   
+    'vortex_tinker',
+
 ]
 
 MIDDLEWARE = [
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'django_vortex_v1.wsgi.app'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 # DATABASES = {
