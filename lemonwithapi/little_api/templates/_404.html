@@ -7,7 +7,37 @@
     <title>Page Not Found</title>
     <link  href="{% static '/css/notfound.css' %}" rel="stylesheet"  />
   </head>
- 
+ <style>
+  * {
+    margin: 0;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-bg {
+    color: blueviolet;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(20deg,
+            rgba(4, 142, 71, 0.748), transparent,
+            rgba(103, 1, 86, 0.2), transparent,
+            rgba(2, 65, 72, 0.2), transparent),
+        linear-gradient(-20deg,
+            rgba(15, 51, 158, 0.7), transparent,
+            rgba(22.109.90, .9)),
+        rgba(2, 170, 187, 0.7);
+    transform: scale(1, 1);
+}
+
+.main-cont {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+ </style>
   <body>
     <main class="main-bg">
         <div class="main-cont">
