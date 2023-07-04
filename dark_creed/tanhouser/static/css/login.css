@@ -1,0 +1,72 @@
+ :root{
+    --form-box-shadow:
+            .5px .5px 2px rgba(1, 29, 120, 0.7),
+            -.5px -.5px 2px rgba(1, 29, 120, 0.7);
+ }
+ .login-cont{
+    min-height: 89.9vh;
+ }
+.login-cont form{
+    border-radius: 10px;
+    box-shadow: .3px .3px rgba(1, 29, 120, 0.7);
+    padding: 20px;
+    width: 60%;
+    margin:  auto;
+}
+.login-cont>form>h1{
+    padding:20px 0;
+}
+.login-cont>form>a {
+    padding: 20px 0;
+}
+.login-cont form:hover {
+    box-shadow: 
+    var(--form-box-shadow);
+    transition: all 2s;     
+}
+.login-cont>form>div{
+    margin: 10px 0;
+    justify-content: space-between;
+    padding: 10px;
+}
+.login-cont>form>div>label {
+    font-size: larger;
+    flex: 1 0 80px;
+    display: flex;
+    align-items: flex-start;
+    font-size: larger;
+    margin: auto;
+    padding: 10px;
+}
+.login-cont input{
+    box-shadow: var(--form-box-shadow);
+    outline: none;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border:none;
+    font-size: large;
+    flex: 1 0 150px;
+    background: none;
+    filter:grayscale(2px 2px 2px rgba(1, 29, 120, 0.7));
+}
+.login-cont>form button {
+    color: inherit;
+    border: none;
+    margin-top: 10px;
+    background: inherit;
+    border-radius: inherit;
+    filter: grayscale(2px 2px 2px rgba(1, 29, 120, 0.7));
+    padding:15px 50px;
+    box-shadow:var(--form-box-shadow);
+}
+.login-cont>form button:hover {
+    box-shadow: inset
+            .5px .5px 2px rgba(1, 29, 120, 0.7),inset
+            -.5px -.5px 2px rgba(1, 29, 120, 0.7);
+}
+
+@media screen and (min-width:900px) {
+    .login-cont>form{
+        width: 30%;
+    }
+}

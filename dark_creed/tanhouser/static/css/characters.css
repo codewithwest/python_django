@@ -1,0 +1,28 @@
+.characters-cont{
+    position: absolute;
+    z-index: 2;
+    background: rgba(128, 128, 128, 0.49);
+}
+.characters-cont .header a{
+    border-radius: 20px;
+    border-bottom: 1px solid;
+    margin-left: auto;
+    padding: 20px;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+.characters-cont .header a:hover {
+    transition:all .7s;
+    border-radius: 25px;
+}
+.characters-cards-cont{
+    padding: 10px;
+    gap: 10px;
+}
+
+.character-card{
+    background: gray;
+    padding: 10px;
+    width:  160px;
+    height: 250px;
+}

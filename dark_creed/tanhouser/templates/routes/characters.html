@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} 
+{% block content %}
+<div class="characters-cont pos-abs top-0 bottom-0 w-100">
+    <div class="flex-col ">
+        <div class="d-flex header  w-100">
+            <h2 class="m-auto">Choose your character</h2>
+            <a href="/">Return</a>
+        </div>
+        <div class="d-flex wrap characters-cards-cont ">
+            {% for chars in characters %}
+              <div class="character-card border flex-col">
+                <img src="{% static 'images/logo.png' %}" alt="">
+               <div class="d-flex">  
+                    <div class="d-flex j-sb">
+                        <p>Name</p><span>:</span>
+                    </div>
+                <p>{{ chars.name }}</p>
+                </div>
+                <p class="d-flex">Power Level: {{ chars.powerLevel }}</p>
+                <p class="d-flex">Rating: {{ chars.Rating }}</p>
+              </div>
+            {% endfor %}  
+        </div>
+        <div></div>
+    </div>
+</div> 
+{% endblock %}
