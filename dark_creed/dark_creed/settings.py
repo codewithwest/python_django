@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dark_creed.wsgi.application'
+WSGI_APPLICATION = 'dark_creed.wsgi.app'
 
 
 # Database
