@@ -9,3 +9,6 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+section{
+    padding: 20px 10px;
+}
