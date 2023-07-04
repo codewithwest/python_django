@@ -1,33 +1,5 @@
-asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
-certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
-cffi==1.15.1
-charset-normalizer==3.1.0
-cryptography==41.0.1
-defusedxml==0.7.1
-distlib==0.3.6
-Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
-django-templated-mail==1.1.1
+django==4.1
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 djoser==2.2.0
-filelock==3.12.2
-idna==3.4
-mysqlclient==2.1.1
-oauthlib==3.2.2
-Pillow==9.5.0
-pipenv==2023.6.12
-platformdirs==3.5.3
-pycparser==2.21
-PyJWT==2.7.0
-python3-openid==3.2.0
-pytz==2023.3
-requests==2.31.0
-requests-oauthlib==1.3.1
-social-auth-app-django==5.2.0
-social-auth-core==4.4.2
-sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
-tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
-urllib3==2.0.3
-virtualenv==20.23.0
-virtualenv-clone==0.5.7
-wincertstore==0.2
+ 
