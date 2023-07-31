@@ -1,0 +1,21 @@
+{% extends '../base.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="css/newbook.css">
+<form action="" method="post" class="form">
+    {% csrf_token %}
+    <div class="">
+        <label for="title">Book Title</label>
+        <input type="text" name="title">
+    </div>
+    <div class="">
+        <label for="author">Book Author</label>
+        <input type="text" name="author">
+    </div>
+    <div class="">
+        <label for="price">Book Price</label>
+        <input type="number" name="price" inputmode="numeric">
+    </div>
+    <button type="submit">Add Book</button>
+</form>
+
+{% endblock %}

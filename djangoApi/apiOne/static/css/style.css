@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+
+}
+
+html,body{
+    background: linear-gradient(10deg,#4ceb81a8,#051aa2a3,#051aa271,#4ceb81a8);
+}
+
+.content{
+    padding: 20px 5px;
+    min-height: auto;
+}

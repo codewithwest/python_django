@@ -1,0 +1,23 @@
+{% extends '../base.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="css/allbooks.css">
+<h2>Number of books: {{ books|length }}</h2>
+   <div class="all-books-cont">
+   
+        {% for book in books  %}
+		<div class="book-card">
+            <!-- <div class="image-cont"> -->
+                <img src="images/book.jpg" alt="">
+            <!-- </div> -->
+			<div class="title">{{ book.title }}</div>
+			<div class="author">{{ book.author }}</div>
+			<div class="cost">$ {{ book.price }}</div>
+			 
+        </div>
+        {% endfor %}
+ 
+   </div>
+   
+
+
+{%endblock %}

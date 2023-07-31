@@ -1,0 +1,18 @@
+.footer-cont{
+    padding: 10px;
+    color: antiquewhite;
+}
+.footer-cont>.div1{
+    flex: 1;
+    box-shadow: 1px 1px 8px rgba(44, 44, 44, .6);
+   padding: 40px 10px;
+   text-align: center;
+
+}
+.by-line{
+    padding: 2px 5px;
+    background: rgba(44, 44, 44, .6);
+    text-align: right;
+    box-shadow: 1px 1px 8px rgba(44, 44, 44, .6);
+
+}

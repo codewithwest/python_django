@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <base href="{% static '/' %}" />
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/style.css' %}"
+      onload="this.rel = 'stylesheet'"
+      type="text/css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/_header.css' %}"
+      onload="this.rel = 'stylesheet'"
+      type="text/css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/_footer.css' %}"
+      onload="this.rel = 'stylesheet'"
+      type="text/css"
+    />
+  
+  </head>
+  <body>
+    <header>{% include 'partials/_header.html' %}</header>
+    <section class="content">{% block content %} {% endblock %}</section>
+
+    <footer>{% include 'partials/_footer.html' %}</footer>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+form{
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(44, 44, 44, .7);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+
+
+}
+form>div{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form>div>label{
+    flex:1 0 90px;
+    padding: 20px 0px;
+    font-size: larger;
+
+}
+.form>div>input{
+    flex:1 0 220px;
+    padding: 20px;
+    outline: rgba(44, 44, 44, 0.7);
+    background: rgba(66, 66, 66, .3);
+    border: none;
+    border-radius: 5px;
+}
+.form>button{
+    padding:10px 30px;
+    margin: auto;
+    font-size: larger;
+    font-weight: 600;
+    background: inherit;
+    border: none;
+    box-shadow: inherit;
+
+}
+.form>button:hover{
+    box-shadow: 1px 1px 5px #db9b9f;
+    color: aliceblue;
+}

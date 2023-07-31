@@ -1,0 +1,30 @@
+.nav{
+    padding: 10px;
+    box-shadow: 1px 1px rgba(121,44,199,.5);
+    align-items: center;
+    justify-content: center;
+}
+.nav-cont{
+    /* margin: 10px; */
+    box-shadow: 1px 1px 6px rgba(121,44,199,.5);
+    width: fit-content;
+    padding: 30px;
+    margin: auto;
+
+}
+.nav-cont a{
+    padding: 20px 25px;
+    text-decoration: none;
+    /* box-shadow: 1px 1px rgba(121,44,199,.5); */
+    transition: all .8s;
+    color: inherit;
+
+
+}
+.nav-cont a:hover{
+    background: linear-gradient(#282727,#239fff );
+    color: #fff;
+    transition: background .6s;
+    box-shadow: -1px -1px rgba(121,44,199,.5);
+
+}
