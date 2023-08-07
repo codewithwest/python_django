@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-h%re6v^z%rseln2d9_tvovqy@!%%&==&06jelv3(ey=_*i^=j9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1',]
 
 
 # Application definition
@@ -37,7 +37,14 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "django.contrib.staticfiles","apiOne",
+    "django.contrib.staticfiles",
+    "apiOne",
+    "apiTwo",
+    "lemonApi",
+    "serializeApi",
+    "modelSerializerApi",
+    "rest_framework",
+    "debug_toolbar",
 ]
 
 MIDDLEWARE = [
@@ -48,6 +55,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "learnApi.urls"
@@ -55,7 +63,7 @@ ROOT_URLCONF = "learnApi.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-      'DIRS': ['oneApi/templates'],
+        'DIRS': ['oneApi/templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -125,3 +133,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

@@ -1,0 +1,9 @@
+django==4.1
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.2.2
+djoser==2.2.0
+sqlparse==0.4.3
+django-environ==0.10.0
+asgiref==3.5.2
+backports.zoneinfo==0.2.1
+ 

@@ -8,6 +8,9 @@ form{
 
 
 }
+form:hover{
+    box-shadow: 1.5px 1.5px 4px rgba(185, 179, 179, 0.7);
+}
 form>div{
     padding: 10px;
     display: flex;
@@ -25,11 +28,12 @@ form>div{
     outline: rgba(44, 44, 44, 0.7);
     background: rgba(66, 66, 66, .3);
     border: none;
+    color: aliceblue;
     border-radius: 5px;
 }
 .form>button{
     padding:10px 30px;
-    margin: auto;
+    margin: 10px auto;
     font-size: larger;
     font-weight: 600;
     background: inherit;

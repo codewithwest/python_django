@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.db import IntegrityError
@@ -8,23 +8,28 @@ from django.views.decorators.csrf import csrf_exempt
 from django.forms.models import model_to_dict
 
 
+def home(request):
+    return render(request, 'routes/index.html')
+
 # Create your views here.
+
+
 def books(request):
     # Checks methos type
     if request.method == 'GET':
         # Gets all data that matches the model
         books = Book.objects.all().values()
         # Returns it as a list
-        return render(request, 'routes/allbooks.html',{"books":list(books)})
+        return render(request, 'routes/allbooks.html', {"books": list(books)})
         # return JsonResponse({"books":list(books)})
 
-    
+
 @csrf_exempt
 def newBook(request):
-     # Checks methos type
+    # Checks methos type
     if request.method == 'GET':
         # Gets all data that matches the model
-         
+
         # Returns it as a list
         return render(request, 'routes/newbook.html')
         # return JsonResponse({"books":list(books)})
@@ -34,14 +39,20 @@ def newBook(request):
         author = request.POST.get('author')
         price = float(request.POST.get('price'))
         book = Book(
-            title = title,
-            author = author,
-            price = price
+            title=title,
+            author=author,
+            price=price
         )
         # Trys to save and send response
         try:
             book.save()
         except IntegrityError:
-            return JsonResponse({'error':'true','message':'required field missing'},status=400)
+            return JsonResponse({'error': 'true', 'message': 'required field missing'}, status=400)
 
-        return HttpResponseRedirect('/api/books/')
+        return HttpResponseRedirect('/books/')
+
+
+def deleteBook(request, pk):
+    instance = Book.objects.get(id=pk)
+    instance.delete()
+    return redirect('/books/')
